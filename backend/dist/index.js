@@ -26,6 +26,6 @@ app.use((0, cors_1.default)({
 app.use(express_1.default.static(path_1.default.join(__dirname, "../../frontend/dist")));
 app.use("/api/auth", auth_1.default);
 app.use("/api/users", users_1.default);
-app.listen(3000, () => {
-    console.log("server is running on localhost:3000");
+app.listen(9000, () => {
+    console.log("server is running on localhost:9000");
 });

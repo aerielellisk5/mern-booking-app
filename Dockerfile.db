@@ -1,0 +1,10 @@
+# pulling the latest image
+FROM mongo:latest
+
+# setting environments for the username, password, and initial db
+ENV MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+ENV MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+ENV MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
+
+# expose the port
+EXPOSE 27017
